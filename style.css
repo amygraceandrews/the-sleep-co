@@ -4,6 +4,49 @@
   box-sizing: border-box;
 }
 
-h1 {
-  color: red;
+/* temporary styles for structural html */
+
+* {
+  padding: 0.5rem;
+  border: 2px solid rgb(220, 220, 220);
+}
+
+html {
+  border: none;
+}
+
+body {
+  border: none;
+}
+
+#tw_react_container {
+  border: none;
+}
+
+#tw_react_message_container {
+  border: none;
+}
+
+/* Image Styles */
+
+.bg-image {
+  background-image: url(/images/the-sleep-co1.jpg);
+  background-size: cover;
+  min-height: 10rem;
+}
+
+/* Universal styles & utility classes */
+
+.padded {
+  padding: 5%;
+}
+.padded-sm {
+  padding: 1rem;
+}
+.bg-dark {
+  background-color: #192b37;
+}
+
+.white-text {
+  color: white;
 }
