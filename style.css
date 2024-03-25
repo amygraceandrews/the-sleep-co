@@ -42,6 +42,12 @@ body {
   background-color: #192b37;
   color: white;
 }
+
+.bg-featured {
+  background-color: #ffbe00;
+  color: white;
+}
+
 .tall-50 {
   min-height: 50vh;
 }
@@ -121,6 +127,9 @@ body {
 }
 .featured-text-white {
   color: white;
+}
+.featured-text-dark {
+  color: #192b37;
 }
 
 .small-text {
