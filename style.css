@@ -230,6 +230,7 @@ header {
   background-image: url("/images/the-sleep-co4.jpg");
   background-size: cover;
   background-position: center;
+  padding: 1% 1%;
 }
 
 header h3 {
@@ -280,13 +281,14 @@ form textarea {
 }
 
 form button {
-  background-color: #192b37;
+  background-color: #ffbe00;
   border-radius: 20px;
   color: white;
   border: none;
   padding: 0.5rem 2rem;
   letter-spacing: 0.1em;
   margin: 0.5rem 0;
+  width: 100%;
 }
 
 form input:focus,
@@ -295,5 +297,5 @@ form textarea:focus {
 }
 
 form button:hover {
-  color: #ffbe00;
+  color: #192b37;
 }
