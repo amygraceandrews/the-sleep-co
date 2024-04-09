@@ -1,5 +1,15 @@
 ---
 layout: default
+cards:
+ - heading: Small Mattress
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   featured_image: /images/the-sleep-co3.jpg
+ - heading: Medium Mattress
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   featured_image: /images/the-sleep-co4.jpg
+ - heading: Luxury Mattress
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   featured_image: /images/the-sleep-co1.jpg
 ---
 
     <!-- Header banner -->
@@ -61,47 +71,21 @@ layout: default
 
     <!-- Product Card section -->
     <section class="grid-spaceAround padded">
+
+    {% for item in page.cards %}
+
       <div class="padded-2 col-3_sm-12 tall-70 bg-dark round sm-margin-b-1">
         <div class="card">
-          <div class="bg-image bg-lamp col-3 portrait round"></div>
+          <div class="bg-image col-3 portrait round" style="background-image: url('{{item.featured_image}}')"></div>
           <div class="padded-sm">
-            <h3>standard mattress</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet consectetur, adipisicing elit. Quo quasi
-              nesciunt quia accusamus.
-            </p>
+            <h3>{{item.heading}}</h3>
+            <p>{{item.description}}</p>
           </div>
         </div>
       </div>
 
-      <div class="padded-2 col-3_sm-12 tall-70 bg-dark round sm-margin-b-1">
-        <div class="card">
-          <div class="bg-image bg-yellow col-3 portrait round"></div>
-          <div class="padded-sm">
-            <h3>deluxe mattress</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet consectetur, adipisicing elit. Quo quasi
-              nesciunt quia accusamus.
-            </p>
-          </div>
-        </div>
-      </div>
+    {% endfor %}
 
-      <div class="padded-2 col-3_sm-12 tall-70 bg-dark round">
-        <div class="card">
-          <div class="bg-image bg-dog col-3 portrait round"></div>
-          <div class="padded-sm">
-            <h3>luxury mattress</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet consectetur, adipisicing elit. Quo quasi
-              nesciunt quia accusamus.
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Banner Section -->
