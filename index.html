@@ -1,9 +1,15 @@
 ---
 layout: default
+featured:
+ - icon: fas fa-cloud
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, delectus aliquam explicabo quis incidunt consequatur eveniet quas numquam saepe provident perferendis dolores officia nam dolorum repellat quod fugit a! Maxime.
+ - icon:
+   description:
+ - icon:
+   description:
+ - icon:
+   description:
 ---
-    
-    
-    
     
     <!-- Header banner -->
     <header class="header-banner padded grid text-center tall-90 md-tall-80">
@@ -51,42 +57,16 @@ layout: default
       <div class="padded-sm col-12 text-center">
         <h2><span class="featured-text">features</span> you will love</h2>
       </div>
+
+      {% for item in page.featured %}
+
       <div class="padded-sm col-3_sm-6 xxs-stack">
-        <i class="fas fa-cloud"></i>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-          delectus aliquam explicabo quis incidunt consequatur eveniet quas
-          numquam saepe provident perferendis dolores officia nam dolorum
-          repellat quod fugit a! Maxime.
-        </p>
-      </div>
-      <div class="padded-sm col-3_sm-6 xxs-stack">
-        <i class="fas fa-cloud"></i>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-          delectus aliquam explicabo quis incidunt consequatur eveniet quas
-          numquam saepe provident perferendis dolores officia nam dolorum
-          repellat quod fugit a! Maxime.
-        </p>
-      </div>
-      <div class="padded-sm col-3_sm-6 xxs-stack">
-        <i class="fas fa-cloud"></i>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-          delectus aliquam explicabo quis incidunt consequatur eveniet quas
-          numquam saepe provident perferendis dolores officia nam dolorum
-          repellat quod fugit a! Maxime.
-        </p>
-      </div>
-      <div class="padded-sm col-3_sm-6 xxs-stack">
-        <i class="fas fa-cloud"></i>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-          delectus aliquam explicabo quis incidunt consequatur eveniet quas
-          numquam saepe provident perferendis dolores officia nam dolorum
-          repellat quod fugit a! Maxime.
-        </p>
-      </div>
+        <i class="{{item.icon}}"></i>
+        <p> {{item.description}} </p>
+       </div>
+
+      {% endfor %} 
+
     </section>
 
     <!-- Sleep section -->
