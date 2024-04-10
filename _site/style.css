@@ -135,6 +135,23 @@ body {
   padding: 0.5%;
 }
 
+.gallery a {
+  border-bottom: none;
+}
+
+/* Background of gallery when active */
+.lg-backdrop {
+  background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in {
+  opacity: 0.9;
+}
+
+.lg-sub-html {
+  background-color: rgb(20,20,20);
+}
+
 /* Typography styles */
 .text-left {
   text-align: left;
