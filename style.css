@@ -139,6 +139,10 @@ body {
   border-bottom: none;
 }
 
+.gallery-button {
+  background-color:#ffbe00;
+}
+
 /* Background of gallery when active */
 .lg-backdrop {
   background-color: rgb(20,20,20);
