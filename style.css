@@ -348,6 +348,7 @@ form button:hover {
   bottom: 0;
   right: 0;
   left: 0;
+  z-index: 2;
 }
 
 .mobile-menu a {
@@ -358,7 +359,7 @@ form button:hover {
 
 .hamburger-button {
   position: relative;
-  z-index: 2;
+  z-index: 9;
 }
 
 .hamburger-button i {
