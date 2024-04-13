@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: "catamaran", sans-serif;
+  font-family: var(--text-font);
   color: #192b37;
 }
 
@@ -42,17 +42,17 @@ body {
   padding: 10%;
 }
 .bg-dark {
-  background-color: #192b37;
+  background-color: var(--dark);
   color: white;
 }
 
 .bg-featured {
-  background-color: #ffbe00;
+  background-color: var(--featured);
   color: white;
 }
 
 .bg-light {
-  background-color: #e3ecf2;
+  background-color: var(--light);
 }
 
 .tall-40 {
